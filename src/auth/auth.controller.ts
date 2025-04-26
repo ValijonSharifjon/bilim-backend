@@ -1,16 +1,18 @@
 import {
   Body,
-  Controller, Get,
+  Controller,
+  Get,
   HttpCode,
   HttpStatus,
   InternalServerErrorException,
-  Post, Req,
+  Post,
+  Req,
 } from '@nestjs/common';
 import { AuthService } from './auth.service';
 import { AuthDto } from './dto/auth.dto';
 import { RefreshTokenDto } from './dto/refresh-token.dto';
-import {Auth} from "./decorators/auth.decorator";
-import {CurrentUser} from "./decorators/user.decorator";
+import { Auth } from './decorators/auth.decorator';
+import { CurrentUser } from './decorators/user.decorator';
 
 @Controller('auth')
 export class AuthController {

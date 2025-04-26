@@ -2,7 +2,7 @@ import { AuthService } from './auth.service';
 import { Test, TestingModule } from '@nestjs/testing';
 import { PrismaService } from '../prisma/prisma.service';
 import { JwtService } from '@nestjs/jwt';
-import {BadRequestException, UnauthorizedException} from '@nestjs/common';
+import { BadRequestException, UnauthorizedException } from '@nestjs/common';
 import * as bcrypt from 'bcryptjs';
 
 const mockPrisma = {

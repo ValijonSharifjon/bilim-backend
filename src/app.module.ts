@@ -9,7 +9,13 @@ import { AnswersModule } from './answers/answers.module';
 import { AdminModule } from './admin/admin.module';
 
 @Module({
-  imports: [ConfigModule.forRoot(), AuthModule, QuestionsModule, AnswersModule, AdminModule],
+  imports: [
+    ConfigModule.forRoot(),
+    AuthModule,
+    QuestionsModule,
+    AnswersModule,
+    AdminModule,
+  ],
   controllers: [AppController],
   providers: [AppService, PrismaService],
 })
